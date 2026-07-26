@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of internal dev build artifacts
+Disallow: /dist/
+Disallow: /node_modules/
+
+Sitemap: https://www.csrexus.com/sitemap.xml
