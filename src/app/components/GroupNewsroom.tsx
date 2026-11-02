@@ -32,17 +32,17 @@ const pressDirectives: PressDirective[] = [
     category: 'product',
     categoryLabel: 'R&D LABS',
     mandate: 'Open-Source Pedagogical LLMs & Accreditation Benchmarks',
-    summary: 'Our central CSREXUS AI Research division publishes recurring academic benchmark datasets and cognitive SLM architectures designed to assist university faculty and automate exam evaluation.',
+    summary: 'Explore practical AI research questions, model evaluation, and learning-support prototypes. Any published research or benchmark should be linked to its actual release.',
     icon: Cpu,
     gradient: 'from-purple-500 to-indigo-500',
   },
   {
     id: 'directive-3',
-    title: 'Institutional University Network Expansion',
+    title: 'Campus Technology',
     category: 'product',
     categoryLabel: 'CAMPUS WORKS',
     mandate: 'Multi-Campus Cloud Migrations & ERP Modernization',
-    summary: 'InstaTech Solutions and CampusX lead institutional mainframe transformations across 250+ connected colleges, deploying unified student identity (CSREXUS ID) and high-concurrency examination grids.',
+    summary: 'Explore campus workflows, system integration, and cloud modernisation opportunities. Specific deployments and institutional partnerships should be confirmed before they are announced.',
     icon: Globe2,
     gradient: 'from-blue-500 to-cyan-500',
   },
@@ -52,7 +52,7 @@ const pressDirectives: PressDirective[] = [
     category: 'governance',
     categoryLabel: 'GOVERNANCE',
     mandate: 'ISO 27001 Security, Zero Data Breaches & DPDP Act Alignment',
-    summary: 'We maintain strict annual compliance certifications across FERPA, GDPR, and Indian Data Privacy laws, ensuring all partner universities operate within audit-ready zero-trust parameters.',
+    summary: 'Consider security, privacy, and data governance throughout product development. Do not represent a certification or regulatory compliance status without current supporting evidence.',
     icon: ShieldCheck,
     gradient: 'from-emerald-500 to-teal-500',
   },
@@ -97,6 +97,10 @@ export function GroupNewsroom() {
             Updates about product direction, areas of interest, and initiatives associated with <strong className="text-white">CSREXUS Holdings Group</strong>.
           </p>
         </motion.div>
+
+        <p className="mx-auto -mt-8 mb-10 max-w-3xl text-center text-xs leading-relaxed text-gray-500">
+          This section describes topics and areas of interest. It is not a record of completed acquisitions, signed partnerships, product launches, press releases, audits, or certifications.
+        </p>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-12">
