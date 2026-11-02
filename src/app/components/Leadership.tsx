@@ -131,7 +131,7 @@ export function Leadership() {
           })}
         </div>
 
-        {/* Governing Bodies & Executive Committees Grid */}
+        {/* Suggested governance responsibilities */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {governingBodies.map((body, index) => {
             const Icon = body.icon;
@@ -171,7 +171,7 @@ export function Leadership() {
                     {/* Responsibilities Checklist */}
                     <div className="space-y-2.5 pt-6 border-t border-white/10">
                       <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">
-                        Key Supervisory &amp; Executive Mandate
+                        Suggested responsibilities
                       </h4>
                       {body.keyResponsibilities.map((resp, i) => (
                         <div key={i} className="flex items-start gap-2.5">
