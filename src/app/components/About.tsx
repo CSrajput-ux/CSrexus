@@ -13,8 +13,8 @@ const pillars = [
   },
   {
     icon: TrendingUp,
-    title: 'Strategic Acquisitions (M&A) & Growth Capital',
-    description: 'We consider product collaborations and venture opportunities that align with education, campus technology, applied AI, and engineering.',
+    title: 'Product & Partnership Opportunities',
+    description: 'We explore collaborations and venture ideas that align with education, campus technology, applied AI, and engineering.',
     metric: 'PARTNERSHIPS & VENTURE DEVELOPMENT',
     gradient: 'from-purple-500/20 via-purple-500/10 to-transparent',
     borderHover: 'hover:border-purple-500/50',
