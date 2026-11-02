@@ -130,13 +130,13 @@ export function About() {
             <div className="max-w-2xl text-center md:text-left">
               <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
                 <Award className="w-4 h-4" />
-                <span>The Holding Company Mandate</span>
+                <span>How we work</span>
               </div>
               <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3">
-                Why We Operate as a Private Holding Group
+                A focused approach to product development
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Higher education and enterprise academic infrastructure demand multi-decade stability. By structuring as an independent holding company rather than a short-term venture fund, <strong className="text-white">CSREXUS Holdings Group</strong> guarantees that our subsidiaries remain committed to long-term academic excellence, data sovereignty, and zero-trust security.
+                We aim to build technology with a long-term perspective: understand the problem, design a practical solution, validate it with users, and communicate clearly about what is available. Any legal structure, product relationship, or security commitment should be supported by current documentation.
               </p>
             </div>
 
@@ -145,13 +145,13 @@ export function About() {
                 href="#ecosystem"
                 className="px-6 py-3.5 bg-gradient-to-r from-amber-500 to-purple-600 hover:from-amber-400 hover:to-purple-500 text-white font-bold text-sm rounded-xl transition-all shadow-lg shadow-purple-900/30 text-center"
               >
-                View 8 Subsidiaries
+                Explore initiatives
               </a>
               <a
                 href="#leadership"
                 className="px-6 py-3.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm rounded-xl transition-all text-center"
               >
-                Board of Directors
+                Governance approach
               </a>
             </div>
           </div>
