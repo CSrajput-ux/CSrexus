@@ -18,7 +18,7 @@ const governingBodies = [
   },
   {
     title: 'Product & Operations Coordination (Proposed)',
-    mandate: 'Group Strategy, Capital Allocation & Subsidiary Synergies',
+    mandate: 'Product priorities and responsible resource planning',
     structure: 'Operating roles to be confirmed',
     description: 'A proposed operating function for coordinating priorities, delivery, and shared resources across active products and teams.',
     icon: Building2,
@@ -46,7 +46,7 @@ const governingBodies = [
   },
   {
     title: 'Risk, Privacy & Security Review (Proposed)',
-    mandate: 'ISO 27001 Security, Academic Compliance & ESG Standard',
+    mandate: 'Security, privacy, risk, and operational review',
     structure: 'Risk and security responsibilities',
     description: 'A proposed function for identifying operational, privacy, security, and financial risks and tracking appropriate controls.',
     icon: Scale,
