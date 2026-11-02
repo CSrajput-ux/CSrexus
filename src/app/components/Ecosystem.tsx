@@ -41,13 +41,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'mujcode',
     name: 'MujCode',
     category: 'edtech',
-    ownership: '100% Wholly Owned Subsidiary',
-    leadership: 'Dr. Alistair Vance, Chief Executive Officer',
-    founded: 'Est. 2021',
-    scale: '150,000+ Active Coders • 65+ University Partners',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Comprehensive coding, automated hackathon grading, and career placement platform connecting engineering students with top global enterprises.',
-    deepDiveText: 'MujCode serves as the primary technical talent pipeline across CSREXUS Holdings Group. Offering automated test cases, real-world DevOps sandboxes, and enterprise placement analytics, MujCode has placed over 18,000 engineers into Fortune 500 tech firms.',
-    synergyPoint: 'Integrates natively with CampusX ERP for student transcripts and EduStream for proctored technical exams.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Code2,
     gradient: 'from-blue-500 to-cyan-500',
     borderGlow: 'hover:border-blue-500/50',
@@ -58,13 +58,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'campusx',
     name: 'CampusX',
     category: 'erp',
-    ownership: '100% Wholly Owned Subsidiary',
-    leadership: 'Elena Rostova, Managing Director',
-    founded: 'Est. 2019',
-    scale: '180+ Universities • 850,000+ Student Accounts',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Next-generation cloud ERP & Campus OS automating admissions, attendance, finance, degree verification, and faculty workflows.',
-    deepDiveText: 'CampusX is the institutional operating system powering leading colleges. It replaces fragmented legacy databases with a unified cloud architecture, handling over $400M in tuition processing and 2M daily attendance records.',
-    synergyPoint: 'Serves as the single sign-on (CSREXUS ID) identity provider for all 8 group portfolio platforms.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Building2,
     gradient: 'from-purple-500 to-indigo-500',
     borderGlow: 'hover:border-purple-500/50',
@@ -73,13 +73,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'future-skill-labs',
     name: 'Future Skill Labs',
     category: 'edtech',
-    ownership: '100% Wholly Owned Subsidiary',
-    leadership: 'Marcus Vance, CEO & Head of Curriculum',
-    founded: 'Est. 2022',
-    scale: '45+ Specialized Labs • 40,000+ Certified Graduates',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Deep-tech workforce incubation programs in Quantum Computing, Autonomous Robotics, and Bio-Informatics for university campuses.',
-    deepDiveText: 'Future Skill Labs builds industry-accredited deep-tech laboratories inside university campuses. Equipping students with hardware-in-the-loop simulation tools and direct mentorship from industry research fellows.',
-    synergyPoint: 'Leverages CSREXUS AI Research models for personalized adaptive curriculum delivery.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Sparkles,
     gradient: 'from-pink-500 to-rose-500',
     borderGlow: 'hover:border-pink-500/50',
@@ -88,13 +88,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'edustream',
     name: 'EduStream',
     category: 'edtech',
-    ownership: '100% Wholly Owned Subsidiary',
-    leadership: 'Sarah Jenkins, President',
-    founded: 'Est. 2020',
-    scale: '99.99% Uptime • 12M+ Exams Proctored',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'High-concurrency immersive learning management system (LMS) and AI-proctored digital examination grid for accredited degrees.',
-    deepDiveText: 'EduStream delivers zero-latency video lectures and military-grade proctored online examinations. Capable of supporting 200,000 concurrent students without degradation during nationwide university test cycles.',
-    synergyPoint: 'Utilizes Nexus CyberSecurity biometric face-verification and tamper-proof audit trails.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: GraduationCap,
     gradient: 'from-emerald-500 to-teal-500',
     borderGlow: 'hover:border-emerald-500/50',
@@ -103,13 +103,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'instatech',
     name: 'InstaTech Solutions',
     category: 'erp',
-    ownership: '100% Wholly Owned Subsidiary',
-    leadership: 'Vikram Mehta, VP of Cloud Works',
-    founded: 'Est. 2021',
-    scale: '200+ Institution Migrations • 24/7 Taskforce',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Rapid institutional cloud transformation, legacy database modernization, and multi-campus fiber infrastructure works.',
-    deepDiveText: 'InstaTech Solutions provides the hands-on engineering taskforce that migrates decades-old university mainframe systems to AWS, Azure, and private CSREXUS cloud clusters in under 90 days.',
-    synergyPoint: 'Acts as the deployment and onboarding arm for all CSREXUS Holdings software contracts.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Zap,
     gradient: 'from-amber-500 to-orange-500',
     borderGlow: 'hover:border-amber-500/50',
@@ -118,13 +118,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'csrexus-ai',
     name: 'CSREXUS AI Research',
     category: 'ai',
-    ownership: '100% Group R&D Division',
-    leadership: 'Dr. Aris Thorne, Chief Scientist',
-    founded: 'Est. 2023',
-    scale: '12 Proprietary LLMs • Open-Source EdTech Benchmarks',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'The autonomous cognitive AI engine powering pedagogical co-pilots, automated grading, and predictive dropout analytics across all group subsidiaries.',
-    deepDiveText: 'CSREXUS AI Research develops domain-specific Small Language Models (SLMs) trained exclusively on academic literature, computer science pedagogy, and institutional compliance datasets — outperforming generic LLMs on education benchmarks.',
-    synergyPoint: 'Provides embedded AI co-pilots across MujCode, CampusX, and EduStream.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Cpu,
     gradient: 'from-cyan-500 to-blue-600',
     borderGlow: 'hover:border-cyan-500/50',
@@ -133,13 +133,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'nexus-security',
     name: 'Nexus CyberSecurity',
     category: 'ai',
-    ownership: '85% Majority Owned Venture',
-    leadership: 'Kaelen Voss, Managing Director',
-    founded: 'Acquired 2024',
-    scale: 'ISO 27001 Certified • Zero Data Breaches Across Group',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Zero-trust academic identity fabric (CSREXUS ID), biometric examination verification, and regulatory data compliance firewall.',
-    deepDiveText: 'Nexus CyberSecurity protects student records, financial transactions, and research IP against cyber infiltration. We acquired an 85% majority stake in Nexus in 2024 to ensure our partner universities remain compliant with global privacy laws.',
-    synergyPoint: 'Enforces Zero-Trust encryption across all CSREXUS Holdings Group platforms.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: ShieldCheck,
     gradient: 'from-indigo-500 to-purple-600',
     borderGlow: 'hover:border-indigo-500/50',
@@ -148,13 +148,13 @@ const subsidiaries: Subsidiary[] = [
     id: 'educapital',
     name: 'EduCapital Ventures',
     category: 'venture',
-    ownership: 'Group Venture Capital Arm',
-    leadership: 'David Chen, MD of Investments',
-    founded: 'Est. 2022',
-    scale: '$120M Capital Deployed • 18 Early-Stage Founders',
+    ownership: 'Legal ownership not verified',
+    leadership: 'Leadership information not published',
+    founded: 'Date not verified',
+    scale: 'Operating metrics not verified',
     description: 'Strategic seed and Series A growth fund investing in student-founded startups, campus incubators, and breakthrough educational hardware.',
-    deepDiveText: 'EduCapital Ventures is the venture capital arm of CSREXUS Holdings Group. We deploy non-dilutive and seed capital into student entrepreneurs and faculty spin-off ventures, providing them direct access to our 250+ university testbeds.',
-    synergyPoint: 'Feeds next-generation acquisition targets into the CSREXUS M&A pipeline.',
+    deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
+    synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: TrendingUp,
     gradient: 'from-amber-400 to-yellow-500',
     borderGlow: 'hover:border-amber-400/50',
@@ -162,7 +162,7 @@ const subsidiaries: Subsidiary[] = [
 ];
 
 const categories = [
-  { id: 'all', label: 'All Portfolio (8)' },
+  { id: 'all', label: 'All Initiatives' },
   { id: 'edtech', label: 'EdTech & Learning (3)' },
   { id: 'erp', label: 'Enterprise & ERP (2)' },
   { id: 'ai', label: 'AI & Security Labs (2)' },
@@ -195,21 +195,25 @@ export function Ecosystem() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Holding Group Portfolio &amp; Operating Entities
+              Portfolio &amp; Product Initiatives
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Our Subsidiaries &amp; <br className="hidden sm:block" />
+            Our Portfolio &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-blue-300 via-white to-amber-200 bg-clip-text text-transparent">
-              Portfolio Companies
+              Product Initiatives
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            An integrated portfolio of 8 market-leading platforms — operating independently while sharing the technical, AI, and capital advantage of <strong className="text-white">CSREXUS Holdings Group</strong>.
+            A collection of product names and initiatives spanning education technology, campus systems, AI, and engineering. Availability and operating status vary and should be confirmed directly with <strong className="text-white">CSREXUS Holdings Group</strong>.
           </p>
         </motion.div>
+
+        <div className="mb-8 rounded-2xl border border-amber-400/20 bg-amber-400/5 px-5 py-4 text-sm leading-relaxed text-amber-100/90">
+          Portfolio notice: this page includes project-provided descriptions. Legal ownership, leadership, launch dates, partnerships, customer numbers, and operating metrics are not verified by this website. Confirm them against current primary records before making public claims or business decisions.
+        </div>
 
         {/* Filter Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-14">
