@@ -5,8 +5,8 @@ const pillars = [
   {
     icon: Lightbulb,
     title: 'Venture Studio & Deep-Tech Incubation',
-    description: 'We incubate ground-breaking educational & enterprise platforms from conception inside our dedicated R&D labs — providing initial capital, architectural blueprints, and institutional testbeds.',
-    metric: '12 GLOBAL R&D HUBS • 100% INCUBATION SUCCESS',
+    description: 'We explore education and enterprise software concepts, from problem discovery and technical planning through early prototypes.',
+    metric: 'PRODUCT DISCOVERY & VALIDATION',
     gradient: 'from-blue-500/20 via-blue-500/10 to-transparent',
     borderHover: 'hover:border-blue-500/50',
     tagColor: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
@@ -14,8 +14,8 @@ const pillars = [
   {
     icon: TrendingUp,
     title: 'Strategic Acquisitions (M&A) & Growth Capital',
-    description: 'We acquire high-growth EdTech, campus ERP, and AI ventures, accelerating their trajectory through our holding company balance sheet and global university distribution network.',
-    metric: '$1.85B PORTFOLIO ASSETS • ACTIVE SEED TO SERIES B',
+    description: 'We consider product collaborations and venture opportunities that align with education, campus technology, applied AI, and engineering.',
+    metric: 'PARTNERSHIPS & VENTURE DEVELOPMENT',
     gradient: 'from-purple-500/20 via-purple-500/10 to-transparent',
     borderHover: 'hover:border-purple-500/50',
     tagColor: 'text-purple-400 bg-purple-500/10 border-purple-500/30',
@@ -23,8 +23,8 @@ const pillars = [
   {
     icon: Cpu,
     title: 'Shared Enterprise Synergy Engine',
-    description: 'All CSREXUS subsidiaries inherit our proprietary Cognitive AI Fabric, Zero-Trust Academic Identity (CSREXUS ID), and unified enterprise sales channels — reducing GTM friction by 65%.',
-    metric: 'UNIFIED CSREXUS ID • ZERO-TRUST ARCHITECTURE',
+    description: 'We aim to build reusable software foundations and responsible technology practices that can support products as they grow.',
+    metric: 'SHARED TECHNOLOGY PRINCIPLES',
     gradient: 'from-amber-500/20 via-amber-500/10 to-transparent',
     borderHover: 'hover:border-amber-500/50',
     tagColor: 'text-amber-400 bg-amber-500/10 border-amber-500/30',
@@ -50,22 +50,22 @@ export function About() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Building2 className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Holding Group Strategy &amp; Operating Philosophy
+              Technology approach
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            How CSREXUS Builds &amp; Scales <br className="hidden sm:block" />
+            How CSREXUS approaches <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-amber-200 via-white to-blue-200 bg-clip-text text-transparent">
-              Industry-Leading Subsidiaries
+              Products and initiatives
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed mb-4">
-            Unlike traditional software vendors, <strong className="text-white font-semibold">CSREXUS Holdings Group</strong> operates as a structured parent entity — combining permanent capital, centralized R&amp;D, and deep institutional relationships.
+            <strong className="text-white font-semibold">CSREXUS</strong> explores opportunities in education, campus technology, applied AI, and software engineering.
           </p>
           <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
-            Our portfolio companies maintain entrepreneurial agility while leveraging the immense balance sheet and technical infrastructure of a global corporate conglomerate.
+            We value focused product development, measurable outcomes, responsible data practices, and clear communication about what is built and available.
           </p>
         </motion.div>
 
