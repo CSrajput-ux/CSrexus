@@ -17,54 +17,54 @@ import { useState } from 'react';
 
 const capitalPillars = [
   {
-    title: 'Non-Dilutive R&D Reinvestment',
-    subtitle: 'CENTRAL LABS & AI INFRASTRUCTURE',
-    description: 'We allocate significant holding group cash flow directly into our central CSREXUS AI Research lab and shared campus tech, ensuring all 8 subsidiaries inherit cutting-edge pedagogical models.',
+    title: 'Research & Product Development',
+    subtitle: 'RESEARCH AND SHARED TECHNOLOGY',
+    description: 'Explore opportunities to support research, shared technology, and learning-focused product development.',
     icon: Sparkles,
     gradient: 'from-blue-500 to-cyan-500',
-    stat: '12 Global Labs',
+    stat: 'RESEARCH FOCUS',
   },
   {
-    title: 'Strategic Portfolio M&A Scale',
+    title: 'Product & Partnership Opportunities',
     subtitle: 'WHOLLY OWNED & MAJORITY STAKES',
-    description: 'We acquire majority and wholly owned equity stakes in high-retention EdTech platforms and campus ERP innovators, integrating them into our 250+ university distribution network.',
+    description: 'Explore potential partnerships, product collaborations, and portfolio development opportunities.',
     icon: Building2,
     gradient: 'from-purple-500 to-indigo-500',
-    stat: '8 Operating Platforms',
+    stat: 'PORTFOLIO DEVELOPMENT',
   },
   {
-    title: 'Sustainable ARR Discipline',
-    subtitle: 'MULTI-YEAR INSTITUTIONAL CONTRACTS',
-    description: 'Our portfolio balance sheet is underpinned by multi-year institutional software contracts with universities and state education boards, generating predictable, low-churn recurring revenue.',
+    title: 'Sustainable Operations',
+    subtitle: 'LONG-TERM PRODUCT VALUE',
+    description: 'Build a sustainable operating model through clear product value, responsible spending, and long-term customer relationships.',
     icon: TrendingUp,
     gradient: 'from-amber-400 to-yellow-500',
-    stat: '99.4% Contract Retention',
+    stat: 'SUSTAINABLE GROWTH',
   },
 ];
 
 const governanceReports = [
   {
-    title: 'Audited Group Balance Sheet & Financial Dossier',
-    type: 'ANNUAL AUDIT SUMMARY',
-    date: 'FY2026 AUDIT COMPLETED',
-    highlight: 'Comprehensive audit of all 8 subsidiary balance sheets by independent top-4 accounting partners.',
-    badge: 'AUDITED FY26',
+    title: 'Financial information',
+    type: 'FINANCIAL INFORMATION',
+    date: 'REQUEST DETAILS',
+    highlight: 'Contact CSREXUS to ask whether approved financial information is available for sharing.',
+    badge: 'ON REQUEST',
     icon: FileText,
   },
   {
-    title: 'ESG & Sustainability Manifesto',
-    type: 'ESG COMPLIANCE REPORT',
-    date: 'ANNUAL RATING RENEWED',
-    highlight: 'AA+ Rating certification, carbon-neutral university server footprint and green data center operations.',
-    badge: 'AA+ RATED',
+    title: 'Sustainability information',
+    type: 'SUSTAINABILITY',
+    date: 'REQUEST DETAILS',
+    highlight: 'Ask about sustainability priorities and request any supporting documentation approved for publication.',
+    badge: 'ON REQUEST',
     icon: Globe2,
   },
   {
-    title: 'Corporate Governance & Whistleblower Charter',
-    type: 'GOVERNANCE POLICY',
-    date: 'BOARD CHARTER ACTIVE',
-    highlight: 'Independent board supervisory rules, audit committee charter, and institutional compliance standards.',
-    badge: 'ISO 27001',
+    title: 'Governance information',
+    type: 'GOVERNANCE',
+    date: 'REQUEST DETAILS',
+    highlight: 'Ask for the current governance structure and any policies approved for external distribution.',
+    badge: 'ON REQUEST',
     icon: Scale,
   },
 ];
@@ -90,23 +90,23 @@ export function InvestorRelations() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <TrendingUp className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Capital Allocation &amp; Holding Governance
+              Partnership &amp; company information
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Capital Allocation Strategy &amp; <br className="hidden sm:block" />
+            Partnership &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-blue-300 via-white to-amber-300 bg-clip-text text-transparent">
-              Audited Governance Framework
+              Corporate Information
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            As an independent technology holding group, <strong className="text-white">CSREXUS Holdings</strong> maintains strict capital stewardship, audited subsidiary reporting, and multi-year institutional ARR retention across all 8 operating platforms.
+            CSREXUS is exploring technology initiatives across product development, partnerships, and research. This page is descriptive and does not constitute an offer, audited financial statement, or investment solicitation.
           </p>
         </motion.div>
 
-        {/* Capital Allocation Pillars Grid */}
+        {/* Product and partnership focus areas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {capitalPillars.map((pillar, index) => {
             const Icon = pillar.icon;
@@ -153,19 +153,19 @@ export function InvestorRelations() {
           })}
         </div>
 
-        {/* Governance Reports & Institutional Disclosures */}
+        {/* Company information and resources */}
         <div className="mb-20">
           <div className="flex items-center justify-between mb-8">
             <div>
               <h3 className="text-2xl font-extrabold text-white mb-1">
-                Audited Governance Reports &amp; Institutional Disclosures
+                Corporate Information &amp; Resources
               </h3>
               <p className="text-sm text-gray-400">
-                Official governance charters, independent accounting certifications, and ESG reporting standards.
+                Request current information and supporting documents through the contact section.
               </p>
             </div>
             <span className="hidden sm:inline-block px-3 py-1 rounded bg-white/5 border border-white/10 text-xs text-amber-300 font-bold uppercase">
-              ISO 27001 COMPLIANT
+              INFORMATION REQUESTS
             </span>
           </div>
 
@@ -206,7 +206,7 @@ export function InvestorRelations() {
                       onClick={() => setShowDossierModal(true)}
                       className="flex items-center gap-1.5 text-xs font-bold text-blue-400 group-hover:text-amber-300 transition-colors"
                     >
-                      <span>Request Official Dossier</span>
+                      <span>Request information</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -220,17 +220,17 @@ export function InvestorRelations() {
         <div className="p-8 rounded-3xl bg-gradient-to-r from-blue-900/30 via-purple-900/40 to-blue-900/30 border border-white/15 backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl font-extrabold text-white mb-1">
-              Accredited Shareholder &amp; M&amp;A Capital Allocation Desk
+              Business &amp; Partnership Enquiries
             </h3>
             <p className="text-sm text-gray-300">
-              For accredited family offices, institutional venture partners, and university chancellors seeking official disclosures.
+              For organisations and individuals interested in discussing a potential partnership or requesting company information.
             </p>
           </div>
           <button
             onClick={() => setShowDossierModal(true)}
             className="flex-shrink-0 px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-sm hover:brightness-110 transition-all shadow-lg shadow-purple-900/30 flex items-center gap-2"
           >
-            <span>Request Audited Financial Dossier</span>
+            <span>Request information</span>
             <Lock className="w-4 h-4" />
           </button>
         </div>
@@ -262,32 +262,32 @@ export function InvestorRelations() {
 
                 <div className="flex items-center gap-3 mb-4">
                   <span className="px-2.5 py-1 rounded bg-amber-400/20 text-amber-300 text-xs font-bold border border-amber-400/30 uppercase tracking-wider">
-                    CONFIDENTIAL DISCLOSURE DESK
+                    INFORMATION REQUEST
                   </span>
-                  <span className="text-xs text-gray-400">ISO 27001 Secure Routing</span>
+                  <span className="text-xs text-gray-400">Contact details required</span>
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2">
-                  Request Audited Holding Group Financial &amp; Governance Dossier
+                  Request Company Information
                 </h3>
                 <p className="text-sm text-gray-400 mb-6">
-                  Official financial balance sheets and shareholder charters are released to accredited university presidents, state education boards, and verified institutional partners.
+                  Use the contact section to request information. Any documents shared should be reviewed for completeness and authenticity before being relied upon.
                 </p>
 
                 <div className="space-y-4 text-gray-300 text-sm leading-relaxed mb-8 p-5 rounded-2xl bg-white/5 border border-white/10">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white block mb-0.5">Independent Accounting &amp; Audit Verification</strong>
-                      <span>All subsidiary balance sheets are independently audited annually with zero material weaknesses.</span>
+                      <strong className="text-white block mb-0.5">Supporting documentation</strong>
+                      <span>The website does not publish audited statements in this section. Request the relevant documents and verify their issuer and reporting period.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white block mb-0.5">Zero Data Breaches &amp; FERPA/GDPR Compliance</strong>
-                      <span>Student records and financial transactions are protected by zero-trust encryption across all 8 portfolio platforms.</span>
+                      <strong className="text-white block mb-0.5">Security and privacy information</strong>
+                      <span>Do not interpret this website as proof of certification or compliance. Request current evidence for any security or privacy claim.</span>
                     </div>
                   </div>
                 </div>
@@ -304,7 +304,7 @@ export function InvestorRelations() {
                     onClick={() => setShowDossierModal(false)}
                     className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:brightness-110 text-white font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-purple-900/30"
                   >
-                    <span>Proceed to Executive Contact Desk</span>
+                    <span>Continue to contact</span>
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>

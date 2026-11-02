@@ -17,42 +17,42 @@ interface PressDirective {
 const pressDirectives: PressDirective[] = [
   {
     id: 'directive-1',
-    title: 'M&A & Portfolio Acquisition Directives',
+    title: 'Partnerships & Venture Opportunities',
     category: 'acquisitions',
-    categoryLabel: 'M&A STRATEGY',
-    mandate: 'Strategic Majority Stakes & Wholly Owned Integrations',
-    summary: 'Our corporate M&A desk evaluates high-retention university ERP systems, automated grading engines, and biometric campus security platforms for permanent equity integration into the holding group.',
+    categoryLabel: 'PARTNERSHIPS',
+    mandate: 'Potential collaborations and venture exploration',
+    summary: 'Explore potential collaborations in education software, campus systems, and developer tools. This topic card is not an announcement of a completed acquisition or investment.',
     icon: Building2,
     gradient: 'from-amber-400 to-yellow-500',
     highlight: true,
   },
   {
     id: 'directive-2',
-    title: 'Central R&D & AI Benchmark Releases',
+    title: 'Applied AI & Research Ideas',
     category: 'product',
     categoryLabel: 'R&D LABS',
-    mandate: 'Open-Source Pedagogical LLMs & Accreditation Benchmarks',
-    summary: 'Our central CSREXUS AI Research division publishes recurring academic benchmark datasets and cognitive SLM architectures designed to assist university faculty and automate exam evaluation.',
+    mandate: 'Responsible AI prototypes and evaluation',
+    summary: 'Explore practical AI research questions, model evaluation, and learning-support prototypes. Any published research or benchmark should be linked to its actual release.',
     icon: Cpu,
     gradient: 'from-purple-500 to-indigo-500',
   },
   {
     id: 'directive-3',
-    title: 'Institutional University Network Expansion',
+    title: 'Campus Technology',
     category: 'product',
     categoryLabel: 'CAMPUS WORKS',
     mandate: 'Multi-Campus Cloud Migrations & ERP Modernization',
-    summary: 'InstaTech Solutions and CampusX lead institutional mainframe transformations across 250+ connected colleges, deploying unified student identity (CSREXUS ID) and high-concurrency examination grids.',
+    summary: 'Explore campus workflows, system integration, and cloud modernisation opportunities. Specific deployments and institutional partnerships should be confirmed before they are announced.',
     icon: Globe2,
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     id: 'directive-4',
-    title: 'ESG & Data Sovereignty Compliance Bulletins',
+    title: 'Security, Privacy & Responsible Operations',
     category: 'governance',
     categoryLabel: 'GOVERNANCE',
-    mandate: 'ISO 27001 Security, Zero Data Breaches & DPDP Act Alignment',
-    summary: 'We maintain strict annual compliance certifications across FERPA, GDPR, and Indian Data Privacy laws, ensuring all partner universities operate within audit-ready zero-trust parameters.',
+    mandate: 'Security engineering and privacy practices',
+    summary: 'Consider security, privacy, and data governance throughout product development. Do not represent a certification or regulatory compliance status without current supporting evidence.',
     icon: ShieldCheck,
     gradient: 'from-emerald-500 to-teal-500',
   },
@@ -82,26 +82,30 @@ export function GroupNewsroom() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Newspaper className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Corporate Press Room &amp; Milestone Directives
+              Updates &amp; Initiatives
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Group Press Room &amp; <br className="hidden sm:block" />
+            Updates &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-white via-amber-200 to-blue-200 bg-clip-text text-transparent">
-              Strategic Milestones
+              Areas of Focus
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Official corporate directives, M&amp;A acquisition mandates, and institutional milestones from <strong className="text-white">CSREXUS Holdings Group</strong>.
+            Updates about product direction, areas of interest, and initiatives associated with <strong className="text-white">CSREXUS Holdings Group</strong>.
           </p>
         </motion.div>
+
+        <p className="mx-auto -mt-8 mb-10 max-w-3xl text-center text-xs leading-relaxed text-gray-500">
+          This section describes topics and areas of interest. It is not a record of completed acquisitions, signed partnerships, product launches, press releases, audits, or certifications.
+        </p>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-12">
           {[
-            { id: 'all', label: 'All Directives (4)' },
+            { id: 'all', label: 'All Topics' },
             { id: 'acquisitions', label: 'M&A Strategy' },
             { id: 'product', label: 'R&D & Campus Milestones' },
             { id: 'governance', label: 'ESG & Governance' },
@@ -146,7 +150,7 @@ export function GroupNewsroom() {
                       </span>
                       {item.highlight && (
                         <span className="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider">
-                          CORE MANDATE
+                          PLANNING AREA
                         </span>
                       )}
                     </div>
@@ -174,7 +178,7 @@ export function GroupNewsroom() {
                 {/* Footer Action */}
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-400">
-                    CSREXUS HOLDINGS CORPORATE DESK
+                    CSREXUS INFORMATION
                   </span>
                   <a
                     href="#contact"
@@ -193,17 +197,17 @@ export function GroupNewsroom() {
         <div className="mt-16 p-8 rounded-3xl bg-white/5 border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <div>
             <h4 className="text-xl font-bold text-white mb-1">
-              Request Official Corporate Media Kit &amp; Press Assets
+              Media &amp; Communication
             </h4>
             <p className="text-sm text-gray-400">
-              For journalist accreditation, executive interview requests, and holding company press logos &amp; guidelines.
+              For media enquiries, product updates, and approved brand assets.
             </p>
           </div>
           <a
             href="#contact"
             className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-sm hover:brightness-110 transition-all flex items-center gap-2 flex-shrink-0 shadow-lg shadow-purple-900/30"
           >
-            <span>Contact Media Relations Desk</span>
+            <span>Contact CSREXUS</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

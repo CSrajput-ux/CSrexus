@@ -3,68 +3,68 @@ import { ShieldCheck, Award, Users, Scale, Building2, Network, CheckCircle2, Arr
 
 const governingBodies = [
   {
-    title: 'Board of Directors & Supervisory Committee',
+    title: 'Strategic Oversight (Proposed)',
     mandate: 'Independent Governance & Fiduciary Oversight',
-    structure: '56% Independent Non-Executive Board Directors',
-    description: 'Providing long-term fiduciary oversight, regulatory compliance, and strategic direction across all CSREXUS Holdings Group subsidiaries and operating platforms.',
+    structure: 'Governance structure to be confirmed',
+    description: 'A proposed governance function for strategic oversight, accountability, and responsible decision-making as the organisation develops.',
     icon: ShieldCheck,
     gradient: 'from-amber-400 to-yellow-500',
     borderHover: 'hover:border-amber-400/50',
     keyResponsibilities: [
-      'Multi-decade holding group strategy & capital stewardship',
-      'Executive committee appointments & subsidiary CEO reviews',
-      'Shareholder equity protection & fiduciary risk management',
+      'Review long-term priorities and allocate available resources responsibly',
+      'Clarify ownership, decision-making, and accountability for active projects',
+      'Identify material business and operational risks',
     ],
   },
   {
-    title: 'Executive Holding Committee (Operating Board)',
-    mandate: 'Group Strategy, Capital Allocation & Subsidiary Synergies',
-    structure: 'Group C-Suite & Subsidiary Managing Directors',
-    description: 'Responsible for day-to-day capital deployment, cross-platform technical synergy, and unified enterprise procurement across 250+ connected university institutions.',
+    title: 'Product & Operations Coordination (Proposed)',
+    mandate: 'Product priorities and responsible resource planning',
+    structure: 'Operating roles to be confirmed',
+    description: 'A proposed operating function for coordinating priorities, delivery, and shared resources across active products and teams.',
     icon: Building2,
     gradient: 'from-blue-500 to-cyan-500',
     borderHover: 'hover:border-blue-500/50',
     keyResponsibilities: [
-      'Shared CSREXUS ID & Cognitive AI infrastructure execution',
-      'Enterprise sales coordination across subsidiary product lines',
-      'Resource allocation between EdTech, ERP, and AI divisions',
+      'Coordinate shared technology priorities where appropriate',
+      'Coordinate product roadmaps and agreed collaboration work',
+      'Plan and track resources against agreed priorities',
     ],
   },
   {
-    title: 'Venture & Acquisitions (M&A) Directorate',
+    title: 'Partnership & Venture Development (Proposed)',
     mandate: 'Venture Studio Incubation & Strategic Stakes',
-    structure: 'Venture Partners & Corporate M&A Directorate',
-    description: 'Evaluating breakthrough educational software, student incubators, and campus cloud infrastructure for seed capital injection and majority equity acquisition.',
+    structure: 'Partnership and product roles',
+    description: 'A proposed function for evaluating product opportunities, collaborations, and potential venture development.',
     icon: Network,
     gradient: 'from-purple-500 to-indigo-500',
     borderHover: 'hover:border-purple-500/50',
     keyResponsibilities: [
-      'Identification of early-stage EdTech & campus ERP founders',
-      '3-stage incubation & testbed deployment across partner campuses',
-      'Balance sheet integration for newly acquired group subsidiaries',
+      'Identify relevant product and research opportunities',
+      'Plan and evaluate product validation with willing participants',
+      'Assess legal, operational, and technical readiness before any venture launch',
     ],
   },
   {
-    title: 'Audit, Risk & Data Sovereignty Committee',
-    mandate: 'ISO 27001 Security, Academic Compliance & ESG Standard',
-    structure: 'Independent Audit & Information Security Officers',
-    description: 'Enforcing zero-trust academic data encryption, FERPA/GDPR compliance, and annual independent accounting balance sheet audits across the holding group.',
+    title: 'Risk, Privacy & Security Review (Proposed)',
+    mandate: 'Security, privacy, risk, and operational review',
+    structure: 'Risk and security responsibilities',
+    description: 'A proposed function for identifying operational, privacy, security, and financial risks and tracking appropriate controls.',
     icon: Scale,
     gradient: 'from-emerald-500 to-teal-500',
     borderHover: 'hover:border-emerald-500/50',
     keyResponsibilities: [
-      'ISO 27001 information security & biometric examination auditing',
-      'Regulatory compliance across FERPA, GDPR, and DPDP frameworks',
-      'Carbon-neutral server footprint & AA+ sustainability verification',
+      'Document security controls and review them periodically',
+      'Assess privacy obligations relevant to each product and market',
+      'Track sustainability commitments using appropriate evidence',
     ],
   },
 ];
 
 const governanceCredentials = [
-  { label: 'ISO 27001 CERTIFIED GROUP', detail: 'Audited Information Security Standard', icon: ShieldCheck },
-  { label: 'INDEPENDENT BOARD OVERSIGHT', detail: '56% Non-Executive Board Directors', icon: Users },
-  { label: 'AUDIT & RISK COMMITTEE', detail: 'Quarterly Independent Financial Audit', icon: Scale },
-  { label: 'AA+ ESG RATING CERTIFIED', detail: 'Highest Sustainable Corporate Standard', icon: Award },
+  { label: 'SECURITY GOVERNANCE', detail: 'Documented controls and independent review, where applicable', icon: ShieldCheck },
+  { label: 'OVERSIGHT', detail: 'Roles and responsibilities to be confirmed', icon: Users },
+  { label: 'RISK MANAGEMENT', detail: 'Review cadence and independent assurance to be confirmed', icon: Scale },
+  { label: 'SUSTAINABILITY', detail: 'Initiatives and external ratings to be confirmed', icon: Award },
 ];
 
 export function Leadership() {
@@ -86,21 +86,25 @@ export function Leadership() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Building2 className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Corporate Governance &amp; Governing Bodies
+              Governance approach
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Board Governance &amp; <br className="hidden sm:block" />
+            Governance responsibilities &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-amber-200 via-white to-purple-200 bg-clip-text text-transparent">
               Executive Architecture
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            The independent supervisory committees, operating directorates, and governance charters guiding <strong className="text-white">CSREXUS Holdings Group</strong> and its 8 portfolio subsidiaries.
+            A suggested framework for accountability, risk awareness, and responsible decision-making as CSREXUS and its products evolve.
           </p>
         </motion.div>
+
+        <p className="mb-8 rounded-2xl border border-amber-400/20 bg-amber-400/5 px-5 py-4 text-sm leading-relaxed text-amber-100/90">
+          Governance note: these cards describe suggested responsibilities only. They do not establish that a board, committee, independent director, audit, certification, or formal appointment currently exists.
+        </p>
 
         {/* Corporate Governance Credentials Bar */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
@@ -127,7 +131,7 @@ export function Leadership() {
           })}
         </div>
 
-        {/* Governing Bodies & Executive Committees Grid */}
+        {/* Suggested governance responsibilities */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {governingBodies.map((body, index) => {
             const Icon = body.icon;
@@ -167,7 +171,7 @@ export function Leadership() {
                     {/* Responsibilities Checklist */}
                     <div className="space-y-2.5 pt-6 border-t border-white/10">
                       <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">
-                        Key Supervisory &amp; Executive Mandate
+                        Suggested responsibilities
                       </h4>
                       {body.keyResponsibilities.map((resp, i) => (
                         <div key={i} className="flex items-start gap-2.5">
@@ -180,7 +184,7 @@ export function Leadership() {
 
                   {/* Footer Action */}
                   <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-gray-400 group-hover:text-white transition-colors">
-                    <span>Inquire with Governance Desk</span>
+                    <span>Discuss governance</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-amber-300" />
                   </div>
                 </div>
@@ -193,10 +197,10 @@ export function Leadership() {
         <div className="p-8 rounded-3xl bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/20 backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl md:text-2xl font-extrabold text-white mb-1">
-              Request Official Holding Group Governance &amp; Audit Charter
+              Request governance information
             </h3>
             <p className="text-sm text-gray-300">
-              For accredited university chancellors, government education boards, and institutional shareholders.
+              Ask for current organisational information and any policies approved for external distribution.
             </p>
           </div>
           <a

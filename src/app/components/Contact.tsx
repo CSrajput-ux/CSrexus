@@ -1,277 +1,198 @@
-import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github, Building2, ShieldCheck, Globe2 } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'motion/react';
+import { Building2, Mail, Send, ArrowUpRight } from 'lucide-react';
 
 const inquiryCategories = [
-  { id: 'mna', label: 'M&A & Subsidiary Acquisitions', subtitle: 'Pitching for venture seed or group acquisition' },
-  { id: 'partnership', label: 'Institutional Partnership', subtitle: 'Deploying CampusX or EduStream on campus' },
-  { id: 'investors', label: 'Investor & Shareholder Relations', subtitle: 'Accredited family offices & capital allocation' },
-  { id: 'general', label: 'Media & General Governance', subtitle: 'Press accreditation, ESG & compliance reports' },
+  { id: 'partnership', label: 'Product & Institutional Partnerships', subtitle: 'Discuss a campus or product collaboration.' },
+  { id: 'technology', label: 'Technology & Engineering', subtitle: 'Talk about software, AI, or engineering work.' },
+  { id: 'investment', label: 'Investment & Business', subtitle: 'Discuss business development or investment enquiries.' },
+  { id: 'general', label: 'General Enquiry', subtitle: 'For media, feedback, and other questions.' },
 ];
 
-export function Contact() {
-  const [selectedCategory, setSelectedCategory] = useState('mna');
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    organization: '',
-    role: '',
-    message: '',
-  });
+type FormData = {
+  name: string;
+  email: string;
+  organization: string;
+  role: string;
+  message: string;
+};
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Thank you! Your inquiry (${selectedCategory.toUpperCase()}) has been securely routed to the CSREXUS Holdings executive committee.`);
-    setFormData({ name: '', email: '', organization: '', role: '', message: '' });
+const emptyForm: FormData = {
+  name: '',
+  email: '',
+  organization: '',
+  role: '',
+  message: '',
+};
+
+export function Contact() {
+  const [selectedCategory, setSelectedCategory] = useState('partnership');
+  const [formData, setFormData] = useState<FormData>(emptyForm);
+  const [submissionMessage, setSubmissionMessage] = useState('');
+
+  const contactEmail = import.meta.env.VITE_CONTACT_EMAIL?.trim();
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!contactEmail) {
+      setSubmissionMessage(
+        'The contact form is not configured yet. Please set VITE_CONTACT_EMAIL in the deployment environment before accepting enquiries.',
+      );
+      return;
+    }
+
+    const category = inquiryCategories.find((item) => item.id === selectedCategory)?.label ?? 'General Enquiry';
+    const subject = `CSREXUS enquiry — ${category}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Organisation: ${formData.organization || 'Not provided'}`,
+      `Role: ${formData.role || 'Not provided'}`,
+      `Enquiry type: ${category}`,
+      '',
+      'Message:',
+      formData.message,
+    ].join('\n');
+
+    window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setSubmissionMessage('Your email application should open with a draft. Review it and press Send there; this website does not submit or store the message.');
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData((current) => ({ ...current, [name]: value }));
+    setSubmissionMessage('');
   };
 
   return (
-    <section id="contact" className="relative py-28 bg-gradient-to-b from-[#0a0015] via-[#0d041e] to-[#0a0015] overflow-hidden border-t border-white/10">
-      {/* Background illumination */}
-      <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-10 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <section id="contact" className="relative overflow-hidden border-t border-white/10 bg-gradient-to-b from-[#0a0015] via-[#0d041e] to-[#0a0015] py-24 md:py-28">
+      <div className="pointer-events-none absolute left-10 top-1/4 h-[420px] w-[420px] rounded-full bg-blue-600/10 blur-[150px]" />
+      <div className="pointer-events-none absolute bottom-1/4 right-10 h-[420px] w-[420px] rounded-full bg-purple-600/10 blur-[150px]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        {/* Header */}
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          className="mb-14 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
-            <Building2 className="w-4 h-4 text-amber-400" />
-            <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Corporate Headquarters &amp; Executive Desk
-            </span>
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5">
+            <Building2 className="h-4 w-4 text-amber-400" />
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-300">Contact CSREXUS</span>
           </div>
-
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Connect With The <br className="hidden sm:block" />
-            <span className="bg-gradient-to-r from-amber-200 via-white to-blue-300 bg-clip-text text-transparent">
-              Holding Group Executives
-            </span>
+          <h2 className="mb-5 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
+            Let&apos;s build something
+            <br className="hidden sm:block" />
+            <span className="bg-gradient-to-r from-amber-200 via-white to-blue-300 bg-clip-text text-transparent"> meaningful together.</span>
           </h2>
-
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Select your inquiry category to route directly to our M&amp;A directors, institutional partnership leads, or corporate governance desk.
+          <p className="mx-auto max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
+            Share a little context about your enquiry. We&apos;ll prepare an email draft addressed to the configured CSREXUS contact.
           </p>
         </motion.div>
 
-        {/* Category Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-          {inquiryCategories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setSelectedCategory(cat.id)}
-              className={`p-5 rounded-2xl border text-left transition-all duration-300 ${
-                selectedCategory === cat.id
-                  ? 'bg-gradient-to-b from-white/15 to-white/5 border-amber-400 shadow-xl shadow-purple-950/40 scale-[1.02]'
-                  : 'bg-white/5 hover:bg-white/10 border-white/10'
-              }`}
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-bold text-white">{cat.label}</span>
-                <div className={`w-3 h-3 rounded-full ${selectedCategory === cat.id ? 'bg-amber-400' : 'bg-gray-600'}`} />
-              </div>
-              <p className="text-xs text-gray-400 leading-normal">{cat.subtitle}</p>
-            </button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Form */}
+        <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-12">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-7 p-8 md:p-10 rounded-3xl bg-gradient-to-b from-white/[0.09] to-white/[0.03] border border-white/15 backdrop-blur-2xl shadow-2xl"
+            transition={{ duration: 0.6 }}
+            className="rounded-3xl border border-white/15 bg-gradient-to-b from-white/[0.09] to-white/[0.03] p-6 shadow-2xl backdrop-blur-xl sm:p-8 lg:col-span-7"
           >
-            <div className="mb-6 pb-6 border-b border-white/10">
-              <span className="text-xs font-bold text-amber-300 uppercase tracking-wider">
-                SELECTED ROUTING DESK
-              </span>
-              <h3 className="text-2xl font-extrabold text-white">
-                {inquiryCategories.find((c) => c.id === selectedCategory)?.label}
-              </h3>
+            <div className="mb-6 border-b border-white/10 pb-5">
+              <p className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-300">Enquiry type</p>
+              <h3 className="text-xl font-bold text-white">{inquiryCategories.find((item) => item.id === selectedCategory)?.label}</h3>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-xs uppercase font-bold text-gray-300 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-white placeholder-gray-500 focus:border-amber-400 focus:outline-none transition-all text-sm"
-                    placeholder="Dr. Alistair Vance"
-                  />
-                </div>
+            <div className="mb-7 grid grid-cols-1 gap-3 sm:grid-cols-2" role="group" aria-label="Enquiry category">
+              {inquiryCategories.map((category) => (
+                <button
+                  key={category.id}
+                  type="button"
+                  aria-pressed={selectedCategory === category.id}
+                  onClick={() => {
+                    setSelectedCategory(category.id);
+                    setSubmissionMessage('');
+                  }}
+                  className={`rounded-xl border p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+                    selectedCategory === category.id
+                      ? 'border-amber-400/70 bg-amber-400/10'
+                      : 'border-white/10 bg-white/[0.03] hover:bg-white/[0.07]'
+                  }`}
+                >
+                  <span className="block text-sm font-semibold text-white">{category.label}</span>
+                  <span className="mt-1 block text-xs leading-relaxed text-gray-400">{category.subtitle}</span>
+                </button>
+              ))}
+            </div>
 
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="email" className="block text-xs uppercase font-bold text-gray-300 mb-2">
-                    Corporate / University Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-white placeholder-gray-500 focus:border-amber-400 focus:outline-none transition-all text-sm"
-                    placeholder="a.vance@stanford.edu"
-                  />
+                  <label htmlFor="contact-name" className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-300">Name *</label>
+                  <input id="contact-name" name="name" value={formData.name} onChange={handleChange} required maxLength={100} autoComplete="name" placeholder="Your name" className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20" />
                 </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="organization" className="block text-xs uppercase font-bold text-gray-300 mb-2">
-                    Institution / Company Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="organization"
-                    name="organization"
-                    value={formData.organization}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-white placeholder-gray-500 focus:border-amber-400 focus:outline-none transition-all text-sm"
-                    placeholder="Stanford University / Venture Corp"
-                  />
+                  <label htmlFor="contact-email" className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-300">Email *</label>
+                  <input id="contact-email" name="email" type="email" value={formData.email} onChange={handleChange} required maxLength={254} autoComplete="email" placeholder="you@example.com" className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20" />
                 </div>
-
                 <div>
-                  <label htmlFor="role" className="block text-xs uppercase font-bold text-gray-300 mb-2">
-                    Title / Role *
-                  </label>
-                  <input
-                    type="text"
-                    id="role"
-                    name="role"
-                    value={formData.role}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-white placeholder-gray-500 focus:border-amber-400 focus:outline-none transition-all text-sm"
-                    placeholder="President / Founder / Partner"
-                  />
+                  <label htmlFor="contact-organization" className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-300">Organisation</label>
+                  <input id="contact-organization" name="organization" value={formData.organization} onChange={handleChange} maxLength={150} autoComplete="organization" placeholder="Company or institution" className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20" />
+                </div>
+                <div>
+                  <label htmlFor="contact-role" className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-300">Role</label>
+                  <input id="contact-role" name="role" value={formData.role} onChange={handleChange} maxLength={100} autoComplete="organization-title" placeholder="Your role (optional)" className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20" />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs uppercase font-bold text-gray-300 mb-2">
-                  Inquiry Mandate &amp; Message *
-                  </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/15 rounded-xl text-white placeholder-gray-500 focus:border-amber-400 focus:outline-none transition-all text-sm resize-none"
-                  placeholder="Describe your M&A proposal, campus deployment requirements, or shareholder inquiry..."
-                />
+                <label htmlFor="contact-message" className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-300">Message *</label>
+                <textarea id="contact-message" name="message" value={formData.message} onChange={handleChange} required minLength={10} maxLength={5000} rows={5} placeholder="Tell us what you would like to discuss..." className="w-full resize-y rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20" />
+                <p className="mt-1 text-right text-xs text-gray-500">{formData.message.length}/5000</p>
               </div>
 
-              <button
-                type="submit"
-                className="group w-full py-4 px-6 bg-gradient-to-r from-blue-600 via-purple-600 to-amber-500 rounded-xl font-bold text-white text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-xl shadow-purple-900/30"
-              >
-                <span>Transmit to Holding Group Executive Desk</span>
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <button type="submit" className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-purple-600 to-amber-500 px-6 py-4 text-sm font-bold text-white shadow-lg shadow-purple-900/30 transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d041e]">
+                Prepare email draft <Send className="h-4 w-4" />
               </button>
+              <p role="status" aria-live="polite" className="min-h-5 text-sm leading-relaxed text-amber-200">{submissionMessage}</p>
+              <p className="text-xs leading-relaxed text-gray-500">
+                Your message is not sent or stored by this website. Your email application handles the draft after you review it.
+              </p>
             </form>
           </motion.div>
 
-          {/* Corporate Headquarters & Executive Desks */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
+          <motion.aside
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-5 space-y-6"
+            transition={{ duration: 0.6 }}
+            className="space-y-5 lg:col-span-5"
           >
-            {/* Global HQ Card */}
-            <div className="p-7 rounded-3xl bg-white/5 border border-white/15">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-xl bg-amber-400/20 border border-amber-400/30 flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-amber-300" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold uppercase text-amber-300 tracking-wider">
-                    CORPORATE HEADQUARTERS
-                  </span>
-                  <h4 className="text-lg font-bold text-white">
-                    Silicon Valley Holding HQ
-                  </h4>
-                </div>
+            <div className="rounded-3xl border border-white/15 bg-white/5 p-7">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-400/20 bg-amber-400/10">
+                <Mail className="h-5 w-5 text-amber-300" />
               </div>
-              <p className="text-sm text-gray-300 leading-relaxed">
-                100 Innovation Drive, Executive Suite 800 <br />
-                Menlo Park, CA 94025, United States
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-amber-300">Email contact</p>
+              <h3 className="mb-2 text-xl font-bold text-white">Start a conversation</h3>
+              {contactEmail ? (
+                <a href={`mailto:${contactEmail}`} className="inline-flex items-center gap-2 break-all text-sm text-blue-300 hover:text-amber-200">
+                  {contactEmail}<ArrowUpRight className="h-4 w-4 shrink-0" />
+                </a>
+              ) : (
+                <p className="text-sm leading-relaxed text-gray-400">
+                  Email contact is not configured yet. Set <code className="rounded bg-white/10 px-1.5 py-0.5 text-amber-200">VITE_CONTACT_EMAIL</code> in the hosting environment to enable email drafts.
+                </p>
+              )}
+            </div>
+            <div className="rounded-3xl border border-white/15 bg-white/[0.03] p-7">
+              <h3 className="mb-3 text-lg font-bold text-white">A note on enquiries</h3>
+              <p className="text-sm leading-relaxed text-gray-400">
+                Please avoid including passwords, payment details, government identifiers, or other sensitive personal information in an initial enquiry.
               </p>
             </div>
-
-            {/* R&D & Asia HQ Card */}
-            <div className="p-7 rounded-3xl bg-white/5 border border-white/15">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-                  <Globe2 className="w-5 h-5 text-blue-400" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold uppercase text-blue-300 tracking-wider">
-                    R&amp;D &amp; ASIA-PACIFIC HQ
-                  </span>
-                  <h4 className="text-lg font-bold text-white">
-                    Bangalore Innovation Tower
-                  </h4>
-                </div>
-              </div>
-              <p className="text-sm text-gray-300 leading-relaxed">
-                CSREXUS Tower, Embassy TechVillage <br />
-                Outer Ring Road, Bangalore 560103, India
-              </p>
-            </div>
-
-            {/* Dedicated Executive Routing Lines */}
-            <div className="p-7 rounded-3xl bg-white/5 border border-white/15 space-y-4">
-              <h4 className="text-sm uppercase font-bold tracking-wider text-gray-400 pb-3 border-b border-white/10">
-                Direct Executive Channels
-              </h4>
-              
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-gray-400 font-medium">Venture Studio &amp; M&amp;A:</span>
-                <span className="text-amber-300 font-bold">mna@csrexus.com</span>
-              </div>
-
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-gray-400 font-medium">Investor Relations:</span>
-                <span className="text-blue-300 font-bold">investors@csrexus.com</span>
-              </div>
-
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-gray-400 font-medium">Legal &amp; Governance:</span>
-                <span className="text-purple-300 font-bold">governance@csrexus.com</span>
-              </div>
-            </div>
-          </motion.div>
+          </motion.aside>
         </div>
       </div>
     </section>

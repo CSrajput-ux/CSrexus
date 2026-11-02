@@ -1,43 +1,92 @@
+# CSREXUS
 
-  <div align="center">
+Corporate and product portfolio website for CSREXUS.
 
-  <h1>🚀 CSrexus</h1>
-  <p><strong>Tech private company platform built for a college ecosystem.</strong></p>
+> **Content verification:** Portfolio descriptions, leadership details, ownership statements, operating metrics, certifications, office locations, and financial information shown on the website are project-provided content. Verify each claim against current records and obtain approval before presenting it as an independently verified fact. The website itself is not evidence of a certification, audit, partnership, acquisition, or metric.
 
-  [![Live Demo](https://img.shields.io/badge/Live_Demo-c--srexus.vercel.app-blue?style=for-the-badge&logo=vercel)](https://c-srexus.vercel.app)
-  [![Figma Design](https://img.shields.io/badge/Figma-Corporate_Design-F24E1E?style=for-the-badge&logo=figma)](https://www.figma.com/design/obmMWUtdmb0nTZ13tB8UTq/Corporate-Website-Design)
+## Technology
 
-</div>
+- React 18
+- TypeScript
+- Vite 6
+- Tailwind CSS 4
+- Motion
+- Lucide icons
 
----
+## Requirements
 
-## 📌 About The Project
+- Node.js 20 or newer
+- npm 10 or newer
 
-**CSrexus** is a modern corporate web application designed to connect, empower, and streamline services for the college ecosystem. Built using high-performance web technologies, it delivers a sleek user interface, responsive component system, and seamless UX across devices.
+Check your versions:
 
-### 🌐 Live Preview
-* **Production Deployment:** [c-srexus.vercel.app](https://c-srexus.vercel.app)
-* **Figma UI/UX Design:** [Corporate Website Design](https://www.figma.com/design/obmMWUtdmb0nTZ13tB8UTq/Corporate-Website-Design)
-
----
-
-## 💻 Tech Stack
-
-* **Language:** TypeScript
-* **Frontend:** React, HTML5, CSS3
-* **Build Tool:** Vite
-* **Styling/Post-processing:** PostCSS
-* **Deployment:** Vercel
-
----
-
-## 🛠️ Getting Started Locally
-
-Follow these simple steps to set up the project on your local machine.
-
-### Prerequisites
-
-Make sure you have Node.js (v18 or higher) and npm installed:
 ```bash
-node -v
-npm -v
+node --version
+npm --version
+```
+
+## Run locally
+
+```bash
+npm ci
+npm run dev
+```
+
+Vite prints the local development URL in the terminal.
+
+## Production verification
+
+```bash
+npm run verify
+npm run preview
+```
+
+The verify command runs the production Vite build. TypeScript files are transpiled by the Vite React toolchain; a dedicated static type-check and lint toolchain is not currently configured.
+
+GitHub Actions runs a clean locked dependency installation and production build on pushes to the main/enhancement branches and pull requests targeting main.
+
+## Deployment
+
+The site is a static Vite application.
+
+| Setting | Value |
+|---|---|
+| Install command | `npm ci` |
+| Build command | `npm run verify` |
+| Output directory | `dist` |
+
+Do not commit the generated `dist/` folder. Hosting providers should build it from source during deployment.
+
+## Contact form
+
+The contact form prepares an email draft in the visitor's email application. It does **not** send or store submissions on a server.
+
+1. Copy `.env.example` to `.env.local` for local development.
+2. Set `VITE_CONTACT_EMAIL` to an inbox address that CSREXUS controls.
+3. Configure the same variable in the deployment provider.
+4. Test the form on the deployed domain.
+
+The email address is public because Vite variables are included in the browser bundle. Never put SMTP credentials, API keys, or other secrets in `VITE_*` variables. For server-side delivery, connect a trusted form endpoint with validation, rate limiting, spam protection, and a privacy notice.
+
+## Security and privacy
+
+- Keep credentials in server-side environment variables; never commit secrets.
+- Collect only information necessary to respond to an enquiry.
+- Add a privacy notice and retention policy before collecting personal information.
+- Review dependency and hosting security alerts regularly.
+
+## Project structure
+
+```text
+src/
+  app/
+    App.tsx
+    components/
+  assets/
+  styles/
+public/
+  robots.txt
+  sitemap.xml
+```
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting and launch checks. See [ATTRIBUTIONS.md](./ATTRIBUTIONS.md) for asset credits.

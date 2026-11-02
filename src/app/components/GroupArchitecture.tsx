@@ -6,65 +6,65 @@ const synergyLayers = [
   {
     id: 'auth',
     title: 'CSREXUS ID (Unified Identity Fabric)',
-    subtitle: 'Single sign-on & cross-platform academic credentials',
+    subtitle: 'Identity and access management design',
     icon: KeyRound,
     color: 'from-blue-500 to-cyan-500',
     textColor: 'text-blue-400',
     borderColor: 'border-blue-500/40',
     bgGlow: 'bg-blue-600/10',
-    description: 'A single zero-trust identity layer (CSREXUS ID) that authenticates 1.2M+ students, professors, and university administrators across MujCode, CampusX, EduStream, and all group subsidiaries.',
+    description: 'A proposed identity layer could make sign-in and access management more consistent across education products, provided each integration is built and authorised.',
     benefits: [
-      'Zero student password fatigue across 8 platforms',
-      'Real-time degree and transcript portability via cryptographic verification',
-      'Automated role-based access control (RBAC) for university deans & depts',
+      'Simplified sign-in across participating products',
+      'Secure data exchange with appropriate consent and verification',
+      'Role-based permissions designed around institutional needs',
     ],
   },
   {
     id: 'ai',
     title: 'Cognitive AI & SLM Research Fabric',
-    subtitle: 'Shared educational Small Language Models (SLMs)',
+    subtitle: 'AI research and model evaluation',
     icon: Cpu,
     color: 'from-purple-500 to-indigo-500',
     textColor: 'text-purple-400',
     borderColor: 'border-purple-500/40',
     bgGlow: 'bg-purple-600/10',
-    description: 'Rather than every subsidiary building isolated AI models, our central CSREXUS AI Research lab trains proprietary pedagogical models that are shared via low-latency API hooks across all portfolio companies.',
+    description: 'A shared AI research approach could reduce duplicated effort, with each model evaluated for accuracy, privacy, safety, and suitability before deployment.',
     benefits: [
-      'Automated hackathon & code grading inside MujCode',
-      'AI-assisted attendance & retention prediction in CampusX ERP',
-      '24/7 autonomous pedagogical co-pilots inside EduStream LMS',
+      'Explore assisted evaluation workflows with clear human oversight',
+      'Explore responsible analytics for academic workflows',
+      'Explore learning-support prototypes with appropriate evaluation',
     ],
   },
   {
     id: 'security',
     title: 'Nexus Zero-Trust Compliance Grid',
-    subtitle: 'ISO 27001 & regulatory data protection firewall',
+    subtitle: 'Security, privacy, and data protection principles',
     icon: ShieldCheck,
     color: 'from-emerald-500 to-teal-500',
     textColor: 'text-emerald-400',
     borderColor: 'border-emerald-500/40',
     bgGlow: 'bg-emerald-600/10',
-    description: 'Our subsidiary Nexus CyberSecurity enforces uniform encryption, biometric proctoring verification, and compliance with FERPA, GDPR, and Indian Data Privacy laws across the entire holding group.',
+    description: 'Potential security work includes threat modelling, secure identity, encryption, access controls, and privacy-by-design.',
     benefits: [
-      '100% audit-ready data compliance for partner universities',
-      'Biometric examination security with tamper-proof audit trails',
-      'Centralized threat detection and automated DDoS mitigation',
+      'Documented controls and evidence for agreed requirements',
+      'Appropriate verification and auditability, where legally justified',
+      'Monitoring, incident response, and service resilience planning',
     ],
   },
   {
     id: 'gtm',
     title: 'Global Institutional Distribution Engine',
-    subtitle: 'Unified enterprise sales & 250+ university contracts',
+    subtitle: 'Partnership development and institutional discovery',
     icon: Network,
     color: 'from-amber-500 to-orange-500',
     textColor: 'text-amber-400',
     borderColor: 'border-amber-500/40',
     bgGlow: 'bg-amber-600/10',
-    description: 'New subsidiaries acquired or incubated by CSREXUS Holdings instantly tap into our established procurement relationships with 250+ university presidents, deans, and state education boards.',
+    description: 'A partner network may help teams learn about institutional needs. Any partnership or procurement relationship should be confirmed before it is represented as established.',
     benefits: [
-      '65% faster enterprise procurement & contract closing',
-      'Cross-selling synergy between ERP, placement, and LMS suites',
-      'Dedicated 24/7 cloud migration taskforce (InstaTech)',
+      'Structured discovery with prospective institutional partners',
+      'Potential product interoperability, subject to implementation and consent',
+      'Scoped migration planning with appropriate operational support',
     ],
   },
 ];
@@ -90,28 +90,32 @@ export function GroupArchitecture() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Holding Group Synergy &amp; Shared Infrastructure
+              Technology architecture principles
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            The Parent-Subsidiary <br className="hidden sm:block" />
+            Shared technology <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-purple-300 via-white to-blue-300 bg-clip-text text-transparent">
               Synergy Engine
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Why do our subsidiaries outperform standalone software companies? Because they run on the shared <strong className="text-white">CSREXUS Holdings Core</strong> — a centralized infrastructure stack that powers every portfolio venture.
+            A shared technology approach can reduce duplicated effort while preserving clear product boundaries, privacy controls, and independent validation.
           </p>
         </motion.div>
+
+        <p className="mb-8 rounded-2xl border border-amber-400/20 bg-amber-400/5 px-5 py-4 text-sm leading-relaxed text-amber-100/90">
+          Architecture note: this section describes proposed design patterns and integration opportunities. It does not confirm that these shared services, integrations, customer deployments, or compliance controls are live.
+        </p>
 
         {/* Interactive Architecture Explorer */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Clickable Synergy Layers */}
           <div className="lg:col-span-5 space-y-4">
             <h3 className="text-xs uppercase tracking-widest font-bold text-gray-400 mb-4 px-2">
-              Select Shared Parent Infrastructure Layer
+              Select a proposed technology layer
             </h3>
             {synergyLayers.map((layer) => {
               const Icon = layer.icon;
@@ -156,7 +160,7 @@ export function GroupArchitecture() {
 
               {/* Layer Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 border border-white/15 text-white text-xs font-bold uppercase tracking-wider mb-6">
-                <span>ACTIVE HOLDING GROUP LAYER</span>
+                <span>PROPOSED DESIGN PATTERN</span>
               </div>
 
               <div className="flex items-center gap-4 mb-6">
@@ -180,7 +184,7 @@ export function GroupArchitecture() {
               {/* Benefits Checklist */}
               <div className="space-y-3 pt-6 border-t border-white/10">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">
-                  Synergy Advantage Across All 8 Subsidiaries
+                  Potential benefits to evaluate
                 </h4>
                 {activeLayer.benefits.map((benefit, i) => (
                   <div key={i} className="flex items-start gap-3">

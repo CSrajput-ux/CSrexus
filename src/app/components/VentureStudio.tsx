@@ -4,35 +4,35 @@ import { Sparkles, ArrowRight, Rocket, TrendingUp, Building2, CheckCircle2, Awar
 const stages = [
   {
     step: 'STAGE 01',
-    title: 'Incubation & Seed Capital Injection',
-    subtitle: '$500K — $2M Non-Dilutive & Seed Capital',
-    description: 'We identify breakthrough educational research, AI models, and student-founded platforms. Selected founders enter our Silicon Valley & Bangalore venture studios with immediate engineering and seed capital support.',
+    title: 'Product Discovery & Early Validation',
+    subtitle: 'Problem discovery and feasibility',
+    description: 'Explore education, AI, and campus technology ideas; validate the problem, users, feasibility, and team before committing resources.',
     icon: Rocket,
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     step: 'STAGE 02',
-    title: '250+ University Campus Testbed',
-    subtitle: 'Direct Beta Distribution & Real User Feedback',
-    description: 'Instead of struggling for initial traction, our studio ventures deploy directly across CSREXUS partner universities — testing their technology with 1.2M+ active student and faculty accounts.',
+    title: 'Pilot Planning & Feedback',
+    subtitle: 'Pilots with agreed participants',
+    description: 'Where an appropriate partner and agreement exist, test an early product with a small group of users and learn from structured feedback.',
     icon: TrendingUp,
     gradient: 'from-purple-500 to-indigo-500',
   },
   {
     step: 'STAGE 03',
-    title: 'Scale as Independent Subsidiary',
-    subtitle: 'Full Balance Sheet Backing & Dedicated CEO',
-    description: 'Once unit economics and institutional retention are proven, the venture is incorporated as a Wholly Owned or Majority Subsidiary of CSREXUS Holdings Group with permanent growth capital.',
+    title: 'Sustainable Product Development',
+    subtitle: 'Operating model and team planning',
+    description: 'Develop a sustainable operating plan based on product evidence, customer needs, legal requirements, and available resources.',
     icon: Building2,
     gradient: 'from-amber-500 to-orange-500',
   },
 ];
 
 const portfolioMetrics = [
-  { value: '18', label: 'Startups Incubated', detail: 'Since 2021 inception' },
-  { value: '8', label: 'Graduated Subsidiaries', detail: 'Now standalone group brands' },
-  { value: '$120M', label: 'Growth Capital Deployed', detail: 'Across Seed & Series B' },
-  { value: '4.2x', label: 'Average Revenue Multiple', detail: 'Within 24 mos of acquisition' },
+  { value: 'DISCOVER', label: 'Opportunity sourcing', detail: 'Identify problems worth solving' },
+  { value: 'VALIDATE', label: 'Product validation', detail: 'Test assumptions with evidence' },
+  { value: 'DEVELOP', label: 'Build and iterate', detail: 'Improve products with user feedback' },
+  { value: 'LAUNCH', label: 'Go-to-market planning', detail: 'Prepare operations and partnerships' },
 ];
 
 export function VentureStudio() {
@@ -54,22 +54,25 @@ export function VentureStudio() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Venture Studio &amp; M&amp;A Incubation Arm
+              Venture Studio
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Incubating the Next Generation of <br className="hidden sm:block" />
+            Turning promising ideas into <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-amber-200 via-white to-purple-300 bg-clip-text text-transparent">
-              Institutional Tech Giants
+              Useful technology products
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            How does <strong className="text-white">CSREXUS Holdings Group</strong> continually expand its ecosystem? Through our dedicated <strong className="text-white">Venture Studio &amp; M&amp;A division</strong> that builds, funds, and scales educational and campus ERP innovators.
+            How might <strong className="text-white">CSREXUS</strong> explore new opportunities? Through a structured process of discovery, validation, product development, and responsible launch.
           </p>
         </motion.div>
 
+          <p className="mx-auto -mt-8 mb-10 max-w-3xl text-center text-xs leading-relaxed text-gray-500">
+            The stages below describe a proposed working process, not a claim that funding, pilots, acquisitions, or investment returns have occurred.
+          </p>
         {/* 3-Stage Studio Lifecycle */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {stages.map((stage, idx) => {
@@ -144,7 +147,7 @@ export function VentureStudio() {
         >
           <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
             <Award className="w-4 h-4" />
-            <span>Open M&amp;A &amp; Founder Submissions</span>
+            <span>Product &amp; Collaboration Enquiries</span>
           </div>
 
           <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
@@ -152,7 +155,7 @@ export function VentureStudio() {
           </h3>
 
           <p className="text-gray-300 text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Whether you are seeking Seed Incubation, Series A growth capital, or a strategic M&amp;A acquisition into the <strong className="text-white">CSREXUS Holdings Group</strong> portfolio — our venture directors want to hear from you.
+            Whether you are exploring an education product, a campus technology idea, an applied AI project, or a software collaboration, use the contact section to introduce your idea and current stage.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -160,13 +163,13 @@ export function VentureStudio() {
               href="#contact"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 via-purple-600 to-blue-500 text-white font-bold text-sm transition-all hover:scale-105 shadow-xl shadow-purple-900/30"
             >
-              Submit M&amp;A or Venture Pitch
+              Share a project idea
             </a>
             <a
               href="#investors"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm transition-all"
             >
-              Investor Capital Allocation
+              Partnership information
             </a>
           </div>
         </motion.div>

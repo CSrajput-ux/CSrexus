@@ -5,42 +5,42 @@ const capabilities = [
   {
     icon: Database,
     title: 'Enterprise Academic Cloud & ERP Migration',
-    description: 'We modernize legacy university mainframes into cloud-native multi-tenant CampusX ERP clusters with zero downtime.',
+    description: 'Potential work includes planning legacy-system modernisation and cloud migration approaches with clear rollback and continuity requirements.',
     tag: 'INSTATECH WORKS',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Brain,
     title: 'Turnkey University AI Integration (CSREXUS AI)',
-    description: 'Deploy custom Small Language Models (SLMs) across your institution for autonomous tutoring, attendance analytics, and automated grading.',
+    description: 'Explore carefully scoped AI use cases such as learning assistance and workflow support, with human review and privacy safeguards.',
     tag: 'CSREXUS AI RESEARCH',
     gradient: 'from-purple-500 to-indigo-500',
   },
   {
     icon: ShieldCheck,
     title: 'Multi-Campus Zero-Trust Security & Identity',
-    description: 'Implement CSREXUS ID single sign-on, biometric examination verification, and ISO 27001 data compliance across all university departments.',
+    description: 'Explore identity, access-control, and application-security requirements. Compliance or certification should only be claimed when supported by current evidence.',
     tag: 'NEXUS CYBERSECURITY',
     gradient: 'from-emerald-500 to-teal-500',
   },
   {
     icon: Code,
     title: 'Global Career & Placement Pipeline Network',
-    description: 'Connect your engineering and management students directly to 500+ corporate hiring partners via MujCode Enterprise.',
+    description: 'Explore coding practice, career preparation, and employer-engagement workflows for learners and institutions.',
     tag: 'MUJCODE PLATFORM',
     gradient: 'from-amber-500 to-orange-500',
   },
   {
     icon: Network,
     title: 'Specialized DeepTech Lab & Campus Works',
-    description: 'Design and deploy Quantum Computing, Autonomous Robotics, and Bio-Informatics simulation laboratories on university campuses.',
+    description: 'Explore curriculum and simulation projects in emerging areas such as robotics, quantum computing, and bioinformatics.',
     tag: 'FUTURE SKILL LABS',
     gradient: 'from-pink-500 to-rose-500',
   },
   {
     icon: Wrench,
     title: 'Custom Institutional Engineering & R&D',
-    description: 'Dedicated software architecture teams that build bespoke educational software, examination grids, and state education board portals.',
+    description: 'Explore custom software architecture, implementation, integration, and research projects based on an agreed scope.',
     tag: 'HOLDINGS CORE R&D',
     gradient: 'from-cyan-500 to-blue-600',
   },
@@ -64,19 +64,19 @@ export function Services() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Building2 className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Group Capabilities &amp; Enterprise Solutions
+              Technology capabilities
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Holding Group Enterprise <br className="hidden sm:block" />
+            Technology <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-blue-300 via-white to-amber-200 bg-clip-text text-transparent">
               Capabilities &amp; Works
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            How <strong className="text-white">CSREXUS Holdings Group</strong> delivers turnkey digital infrastructure, regulatory compliance, and cross-subsidiary integration at scale for accredited institutions.
+            Potential areas where <strong className="text-white">CSREXUS</strong> may collaborate include campus technology, applied AI, software engineering, and product development. Project scope, availability, and delivery are confirmed individually.
           </p>
         </motion.div>
 
