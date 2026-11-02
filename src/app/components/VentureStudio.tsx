@@ -147,7 +147,7 @@ export function VentureStudio() {
         >
           <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
             <Award className="w-4 h-4" />
-            <span>Open M&amp;A &amp; Founder Submissions</span>
+            <span>Product &amp; Collaboration Enquiries</span>
           </div>
 
           <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
@@ -155,7 +155,7 @@ export function VentureStudio() {
           </h3>
 
           <p className="text-gray-300 text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Whether you are seeking Seed Incubation, Series A growth capital, or a strategic M&amp;A acquisition into the <strong className="text-white">CSREXUS Holdings Group</strong> portfolio — our venture directors want to hear from you.
+            Whether you are exploring an education product, a campus technology idea, an applied AI project, or a software collaboration, use the contact section to introduce your idea and current stage.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -163,13 +163,13 @@ export function VentureStudio() {
               href="#contact"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 via-purple-600 to-blue-500 text-white font-bold text-sm transition-all hover:scale-105 shadow-xl shadow-purple-900/30"
             >
-              Submit M&amp;A or Venture Pitch
+              Share a project idea
             </a>
             <a
               href="#investors"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm transition-all"
             >
-              Investor Capital Allocation
+              Partnership information
             </a>
           </div>
         </motion.div>
