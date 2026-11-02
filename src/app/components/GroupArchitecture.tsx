@@ -6,7 +6,7 @@ const synergyLayers = [
   {
     id: 'auth',
     title: 'CSREXUS ID (Unified Identity Fabric)',
-    subtitle: 'Single sign-on & cross-platform academic credentials',
+    subtitle: 'Identity and access management design',
     icon: KeyRound,
     color: 'from-blue-500 to-cyan-500',
     textColor: 'text-blue-400',
@@ -22,7 +22,7 @@ const synergyLayers = [
   {
     id: 'ai',
     title: 'Cognitive AI & SLM Research Fabric',
-    subtitle: 'Shared educational Small Language Models (SLMs)',
+    subtitle: 'AI research and model evaluation',
     icon: Cpu,
     color: 'from-purple-500 to-indigo-500',
     textColor: 'text-purple-400',
@@ -95,7 +95,7 @@ export function GroupArchitecture() {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            The Parent-Subsidiary <br className="hidden sm:block" />
+            Shared technology <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-purple-300 via-white to-blue-300 bg-clip-text text-transparent">
               Synergy Engine
             </span>
