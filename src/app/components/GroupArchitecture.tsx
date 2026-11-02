@@ -30,15 +30,15 @@ const synergyLayers = [
     bgGlow: 'bg-purple-600/10',
     description: 'A shared AI research approach could reduce duplicated effort, with each model evaluated for accuracy, privacy, safety, and suitability before deployment.',
     benefits: [
-      'Automated hackathon & code grading inside MujCode',
-      'AI-assisted attendance & retention prediction in CampusX ERP',
-      '24/7 autonomous pedagogical co-pilots inside EduStream LMS',
+      'Explore assisted evaluation workflows with clear human oversight',
+      'Explore responsible analytics for academic workflows',
+      'Explore learning-support prototypes with appropriate evaluation',
     ],
   },
   {
     id: 'security',
     title: 'Nexus Zero-Trust Compliance Grid',
-    subtitle: 'ISO 27001 & regulatory data protection firewall',
+    subtitle: 'Security, privacy, and data protection principles',
     icon: ShieldCheck,
     color: 'from-emerald-500 to-teal-500',
     textColor: 'text-emerald-400',
@@ -62,9 +62,9 @@ const synergyLayers = [
     bgGlow: 'bg-amber-600/10',
     description: 'A partner network may help teams learn about institutional needs. Any partnership or procurement relationship should be confirmed before it is represented as established.',
     benefits: [
-      '65% faster enterprise procurement & contract closing',
-      'Cross-selling synergy between ERP, placement, and LMS suites',
-      'Dedicated 24/7 cloud migration taskforce (InstaTech)',
+      'Structured discovery with prospective institutional partners',
+      'Potential product interoperability, subject to implementation and consent',
+      'Scoped migration planning with appropriate operational support',
     ],
   },
 ];
@@ -90,7 +90,7 @@ export function GroupArchitecture() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Holding Group Synergy &amp; Shared Infrastructure
+              Technology architecture principles
             </span>
           </div>
 
@@ -160,7 +160,7 @@ export function GroupArchitecture() {
 
               {/* Layer Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 border border-white/15 text-white text-xs font-bold uppercase tracking-wider mb-6">
-                <span>ACTIVE HOLDING GROUP LAYER</span>
+                <span>PROPOSED DESIGN PATTERN</span>
               </div>
 
               <div className="flex items-center gap-4 mb-6">
@@ -184,7 +184,7 @@ export function GroupArchitecture() {
               {/* Benefits Checklist */}
               <div className="space-y-3 pt-6 border-t border-white/10">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">
-                  Synergy Advantage Across All 8 Subsidiaries
+                  Potential benefits to evaluate
                 </h4>
                 {activeLayer.benefits.map((benefit, i) => (
                   <div key={i} className="flex items-start gap-3">
