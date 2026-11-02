@@ -82,26 +82,26 @@ export function GroupNewsroom() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Newspaper className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Corporate Press Room &amp; Milestone Directives
+              Updates &amp; Initiatives
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Group Press Room &amp; <br className="hidden sm:block" />
+            Updates &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-white via-amber-200 to-blue-200 bg-clip-text text-transparent">
-              Strategic Milestones
+              Areas of Focus
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Official corporate directives, M&amp;A acquisition mandates, and institutional milestones from <strong className="text-white">CSREXUS Holdings Group</strong>.
+            Updates about product direction, areas of interest, and initiatives associated with <strong className="text-white">CSREXUS Holdings Group</strong>.
           </p>
         </motion.div>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-12">
           {[
-            { id: 'all', label: 'All Directives (4)' },
+            { id: 'all', label: 'All Topics' },
             { id: 'acquisitions', label: 'M&A Strategy' },
             { id: 'product', label: 'R&D & Campus Milestones' },
             { id: 'governance', label: 'ESG & Governance' },
@@ -146,7 +146,7 @@ export function GroupNewsroom() {
                       </span>
                       {item.highlight && (
                         <span className="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 text-[10px] font-bold uppercase tracking-wider">
-                          CORE MANDATE
+                          PLANNING AREA
                         </span>
                       )}
                     </div>
@@ -174,7 +174,7 @@ export function GroupNewsroom() {
                 {/* Footer Action */}
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-400">
-                    CSREXUS HOLDINGS CORPORATE DESK
+                    CSREXUS INFORMATION
                   </span>
                   <a
                     href="#contact"
@@ -193,17 +193,17 @@ export function GroupNewsroom() {
         <div className="mt-16 p-8 rounded-3xl bg-white/5 border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <div>
             <h4 className="text-xl font-bold text-white mb-1">
-              Request Official Corporate Media Kit &amp; Press Assets
+              Media &amp; Communication
             </h4>
             <p className="text-sm text-gray-400">
-              For journalist accreditation, executive interview requests, and holding company press logos &amp; guidelines.
+              For media enquiries, product updates, and approved brand assets.
             </p>
           </div>
           <a
             href="#contact"
             className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-sm hover:brightness-110 transition-all flex items-center gap-2 flex-shrink-0 shadow-lg shadow-purple-900/30"
           >
-            <span>Contact Media Relations Desk</span>
+            <span>Contact CSREXUS</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>
