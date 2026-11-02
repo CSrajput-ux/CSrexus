@@ -25,7 +25,7 @@ const governingBodies = [
     gradient: 'from-blue-500 to-cyan-500',
     borderHover: 'hover:border-blue-500/50',
     keyResponsibilities: [
-      'Shared CSREXUS ID & Cognitive AI infrastructure execution',
+      'Coordinate shared technology priorities where appropriate',
       'Enterprise sales coordination across subsidiary product lines',
       'Resource allocation between EdTech, ERP, and AI divisions',
     ],
@@ -53,9 +53,9 @@ const governingBodies = [
     gradient: 'from-emerald-500 to-teal-500',
     borderHover: 'hover:border-emerald-500/50',
     keyResponsibilities: [
-      'ISO 27001 information security & biometric examination auditing',
-      'Regulatory compliance across FERPA, GDPR, and DPDP frameworks',
-      'Carbon-neutral server footprint & AA+ sustainability verification',
+      'Document security controls and review them periodically',
+      'Assess privacy obligations relevant to each product and market',
+      'Track sustainability commitments using appropriate evidence',
     ],
   },
 ];
@@ -86,21 +86,25 @@ export function Leadership() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <Building2 className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Corporate Governance &amp; Governing Bodies
+              Governance approach
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-white">
-            Board Governance &amp; <br className="hidden sm:block" />
+            Governance responsibilities &amp; <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-amber-200 via-white to-purple-200 bg-clip-text text-transparent">
               Executive Architecture
             </span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            The governance responsibilities and operating principles proposed for <strong className="text-white">CSREXUS Holdings Group</strong> as the organisation and its products evolve.
+            A suggested framework for accountability, risk awareness, and responsible decision-making as CSREXUS and its products evolve.
           </p>
         </motion.div>
+
+        <p className="mb-8 rounded-2xl border border-amber-400/20 bg-amber-400/5 px-5 py-4 text-sm leading-relaxed text-amber-100/90">
+          Governance note: these cards describe suggested responsibilities only. They do not establish that a board, committee, independent director, audit, certification, or formal appointment currently exists.
+        </p>
 
         {/* Corporate Governance Credentials Bar */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
