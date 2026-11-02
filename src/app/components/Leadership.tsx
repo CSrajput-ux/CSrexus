@@ -5,8 +5,8 @@ const governingBodies = [
   {
     title: 'Board of Directors & Supervisory Committee',
     mandate: 'Independent Governance & Fiduciary Oversight',
-    structure: '56% Independent Non-Executive Board Directors',
-    description: 'Providing long-term fiduciary oversight, regulatory compliance, and strategic direction across all CSREXUS Holdings Group subsidiaries and operating platforms.',
+    structure: 'Governance structure to be confirmed',
+    description: 'A proposed governance function for strategic oversight, accountability, and responsible decision-making as the organisation develops.',
     icon: ShieldCheck,
     gradient: 'from-amber-400 to-yellow-500',
     borderHover: 'hover:border-amber-400/50',
@@ -19,8 +19,8 @@ const governingBodies = [
   {
     title: 'Executive Holding Committee (Operating Board)',
     mandate: 'Group Strategy, Capital Allocation & Subsidiary Synergies',
-    structure: 'Group C-Suite & Subsidiary Managing Directors',
-    description: 'Responsible for day-to-day capital deployment, cross-platform technical synergy, and unified enterprise procurement across 250+ connected university institutions.',
+    structure: 'Operating roles to be confirmed',
+    description: 'A proposed operating function for coordinating priorities, delivery, and shared resources across active products and teams.',
     icon: Building2,
     gradient: 'from-blue-500 to-cyan-500',
     borderHover: 'hover:border-blue-500/50',
@@ -33,8 +33,8 @@ const governingBodies = [
   {
     title: 'Venture & Acquisitions (M&A) Directorate',
     mandate: 'Venture Studio Incubation & Strategic Stakes',
-    structure: 'Venture Partners & Corporate M&A Directorate',
-    description: 'Evaluating breakthrough educational software, student incubators, and campus cloud infrastructure for seed capital injection and majority equity acquisition.',
+    structure: 'Partnership and product roles',
+    description: 'A proposed function for evaluating product opportunities, collaborations, and potential venture development.',
     icon: Network,
     gradient: 'from-purple-500 to-indigo-500',
     borderHover: 'hover:border-purple-500/50',
@@ -47,8 +47,8 @@ const governingBodies = [
   {
     title: 'Audit, Risk & Data Sovereignty Committee',
     mandate: 'ISO 27001 Security, Academic Compliance & ESG Standard',
-    structure: 'Independent Audit & Information Security Officers',
-    description: 'Enforcing zero-trust academic data encryption, FERPA/GDPR compliance, and annual independent accounting balance sheet audits across the holding group.',
+    structure: 'Risk and security responsibilities',
+    description: 'A proposed function for identifying operational, privacy, security, and financial risks and tracking appropriate controls.',
     icon: Scale,
     gradient: 'from-emerald-500 to-teal-500',
     borderHover: 'hover:border-emerald-500/50',
@@ -61,10 +61,10 @@ const governingBodies = [
 ];
 
 const governanceCredentials = [
-  { label: 'ISO 27001 CERTIFIED GROUP', detail: 'Audited Information Security Standard', icon: ShieldCheck },
-  { label: 'INDEPENDENT BOARD OVERSIGHT', detail: '56% Non-Executive Board Directors', icon: Users },
-  { label: 'AUDIT & RISK COMMITTEE', detail: 'Quarterly Independent Financial Audit', icon: Scale },
-  { label: 'AA+ ESG RATING CERTIFIED', detail: 'Highest Sustainable Corporate Standard', icon: Award },
+  { label: 'SECURITY GOVERNANCE', detail: 'Documented controls and independent review, where applicable', icon: ShieldCheck },
+  { label: 'OVERSIGHT', detail: 'Roles and responsibilities to be confirmed', icon: Users },
+  { label: 'RISK MANAGEMENT', detail: 'Review cadence and independent assurance to be confirmed', icon: Scale },
+  { label: 'SUSTAINABILITY', detail: 'Initiatives and external ratings to be confirmed', icon: Award },
 ];
 
 export function Leadership() {
@@ -98,7 +98,7 @@ export function Leadership() {
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            The independent supervisory committees, operating directorates, and governance charters guiding <strong className="text-white">CSREXUS Holdings Group</strong> and its 8 portfolio subsidiaries.
+            The governance responsibilities and operating principles proposed for <strong className="text-white">CSREXUS Holdings Group</strong> as the organisation and its products evolve.
           </p>
         </motion.div>
 
