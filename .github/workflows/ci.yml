@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  verify:
-    name: Typecheck and production build
+  build:
+    name: Clean install and production build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,9 +21,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Install dependencies
+      - name: Install locked dependencies
         run: npm ci
-      - name: Typecheck
-        run: npm run typecheck
       - name: Build
-        run: npm run build
+        run: npm run verify
