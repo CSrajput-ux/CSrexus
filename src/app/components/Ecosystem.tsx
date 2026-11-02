@@ -43,8 +43,8 @@ const subsidiaries: Subsidiary[] = [
     category: 'edtech',
     ownership: 'Legal ownership not verified',
     leadership: 'Leadership information not published',
-    founded: 'Date not verified',
-    scale: 'Operating metrics not verified',
+    founded: 'Status to be confirmed',
+    scale: 'Metrics not published',
     description: 'A coding and career-preparation product concept for students, with potential areas such as practice workflows, challenges, and skill development.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
@@ -361,7 +361,7 @@ export function Ecosystem() {
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-blue-400 flex-shrink-0" />
                     <div>
-                      <div className="text-xs text-gray-400 uppercase font-bold">Executive Leadership</div>
+                      <div className="text-xs text-gray-400 uppercase font-bold">Leadership information</div>
                       <div className="text-sm font-semibold text-white">{selectedSub.leadership}</div>
                     </div>
                   </div>
@@ -391,7 +391,7 @@ export function Ecosystem() {
                     <CheckCircle2 className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h5 className="text-sm font-bold text-white mb-1">
-                        CSREXUS Holdings Synergy &amp; Integration
+                        Potential collaboration areas
                       </h5>
                       <p className="text-sm text-gray-300 leading-relaxed">
                         {selectedSub.synergyPoint}
