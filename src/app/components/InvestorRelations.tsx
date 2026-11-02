@@ -17,15 +17,15 @@ import { useState } from 'react';
 
 const capitalPillars = [
   {
-    title: 'Non-Dilutive R&D Reinvestment',
-    subtitle: 'CENTRAL LABS & AI INFRASTRUCTURE',
+    title: 'Research & Product Development',
+    subtitle: 'RESEARCH AND SHARED TECHNOLOGY',
     description: 'Explore opportunities to support research, shared technology, and learning-focused product development.',
     icon: Sparkles,
     gradient: 'from-blue-500 to-cyan-500',
     stat: 'RESEARCH FOCUS',
   },
   {
-    title: 'Strategic Portfolio M&A Scale',
+    title: 'Product & Partnership Opportunities',
     subtitle: 'WHOLLY OWNED & MAJORITY STAKES',
     description: 'Explore potential partnerships, product collaborations, and portfolio development opportunities.',
     icon: Building2,
@@ -33,8 +33,8 @@ const capitalPillars = [
     stat: 'PORTFOLIO DEVELOPMENT',
   },
   {
-    title: 'Sustainable ARR Discipline',
-    subtitle: 'MULTI-YEAR INSTITUTIONAL CONTRACTS',
+    title: 'Sustainable Operations',
+    subtitle: 'LONG-TERM PRODUCT VALUE',
     description: 'Build a sustainable operating model through clear product value, responsible spending, and long-term customer relationships.',
     icon: TrendingUp,
     gradient: 'from-amber-400 to-yellow-500',
@@ -106,7 +106,7 @@ export function InvestorRelations() {
           </p>
         </motion.div>
 
-        {/* Capital Allocation Pillars Grid */}
+        {/* Product and partnership focus areas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {capitalPillars.map((pillar, index) => {
             const Icon = pillar.icon;
@@ -153,7 +153,7 @@ export function InvestorRelations() {
           })}
         </div>
 
-        {/* Governance Reports & Institutional Disclosures */}
+        {/* Company information and resources */}
         <div className="mb-20">
           <div className="flex items-center justify-between mb-8">
             <div>
