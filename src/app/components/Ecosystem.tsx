@@ -255,14 +255,14 @@ export function Ecosystem() {
                     className={`relative h-full p-6 bg-gradient-to-b from-white/[0.08] to-white/[0.03] backdrop-blur-xl border border-white/15 rounded-2xl transition-all duration-300 ${company.borderGlow} hover:scale-[1.03] hover:shadow-xl hover:shadow-purple-900/30 flex flex-col justify-between cursor-pointer`}
                   >
                     <div>
-                      {/* Top Bar: Icon & Ownership Badge */}
+                      {/* Top Bar: Icon & verification note */}
                       <div className="flex items-start justify-between gap-3 mb-5">
                         <div className={`w-14 h-14 bg-gradient-to-br ${company.gradient} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg`}>
                           <Icon className="w-7 h-7 text-white" />
                         </div>
 
                         <span className="text-[10px] font-bold px-2.5 py-1 rounded-md bg-white/10 border border-white/15 text-amber-300 uppercase tracking-wider text-right">
-                          {company.ownership}
+                          {company.category.toUpperCase()}
                         </span>
                       </div>
 
@@ -284,7 +284,7 @@ export function Ecosystem() {
                     {/* Bottom Action Bar */}
                     <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                       <span className="text-xs font-semibold text-gray-400 group-hover:text-white transition-colors">
-                        View Ownership Details
+                        View initiative details
                       </span>
                       {company.url ? (
                         <a
@@ -310,7 +310,7 @@ export function Ecosystem() {
           </AnimatePresence>
         </motion.div>
 
-        {/* Subsidiary Deep-Dive Interactive Modal */}
+        {/* Initiative detail modal */}
         <AnimatePresence>
           {selectedSub && (
             <motion.div
@@ -356,7 +356,7 @@ export function Ecosystem() {
                   </div>
                 </div>
 
-                {/* Executive Leadership & Scale */}
+                {/* Published leadership & Scale */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 p-4 rounded-2xl bg-white/5 border border-white/10">
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-blue-400 flex-shrink-0" />
@@ -369,7 +369,7 @@ export function Ecosystem() {
                   <div className="flex items-center gap-3">
                     <Award className="w-5 h-5 text-amber-400 flex-shrink-0" />
                     <div>
-                      <div className="text-xs text-gray-400 uppercase font-bold">Market Footprint</div>
+                      <div className="text-xs text-gray-400 uppercase font-bold">Operating information</div>
                       <div className="text-sm font-semibold text-white">{selectedSub.scale}</div>
                     </div>
                   </div>
@@ -378,7 +378,7 @@ export function Ecosystem() {
                 {/* Deep Dive Description */}
                 <div className="mb-6">
                   <h4 className="text-sm uppercase font-bold tracking-wider text-gray-400 mb-2">
-                    Subsidiary Overview &amp; Mandate
+                    Overview &amp; status
                   </h4>
                   <p className="text-gray-200 text-base leading-relaxed">
                     {selectedSub.deepDiveText}
