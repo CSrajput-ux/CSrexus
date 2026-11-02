@@ -90,7 +90,7 @@ export function InvestorRelations() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 mb-5">
             <TrendingUp className="w-4 h-4 text-amber-400" />
             <span className="text-amber-300 text-xs font-bold uppercase tracking-wider">
-              Capital Allocation &amp; Holding Governance
+              Partnership &amp; company information
             </span>
           </div>
 
@@ -102,7 +102,7 @@ export function InvestorRelations() {
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            CSREXUS is developing a technology portfolio across product, partnership, and research initiatives. <strong className="text-white">CSREXUS Holdings</strong> The information on this page is descriptive and does not constitute an offer, audited financial statement, or investment solicitation.
+            CSREXUS is exploring technology initiatives across product development, partnerships, and research. This page is descriptive and does not constitute an offer, audited financial statement, or investment solicitation.
           </p>
         </motion.div>
 
