@@ -45,7 +45,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Comprehensive coding, automated hackathon grading, and career placement platform connecting engineering students with top global enterprises.',
+    description: 'A coding and career-preparation product concept for students, with potential areas such as practice workflows, challenges, and skill development.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Code2,
@@ -62,7 +62,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Next-generation cloud ERP & Campus OS automating admissions, attendance, finance, degree verification, and faculty workflows.',
+    description: 'A campus technology concept focused on connecting academic administration, student services, and institutional workflows.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Building2,
@@ -77,7 +77,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Deep-tech workforce incubation programs in Quantum Computing, Autonomous Robotics, and Bio-Informatics for university campuses.',
+    description: 'A learning initiative concept exploring emerging technology topics such as robotics, quantum computing, and bioinformatics.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Sparkles,
@@ -92,7 +92,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'High-concurrency immersive learning management system (LMS) and AI-proctored digital examination grid for accredited degrees.',
+    description: 'A learning platform concept spanning course delivery, assessment workflows, and digital learning experiences.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: GraduationCap,
@@ -107,7 +107,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Rapid institutional cloud transformation, legacy database modernization, and multi-campus fiber infrastructure works.',
+    description: 'An engineering services concept covering system modernisation, cloud migration planning, and infrastructure integration.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Zap,
@@ -122,7 +122,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'The autonomous cognitive AI engine powering pedagogical co-pilots, automated grading, and predictive dropout analytics across all group subsidiaries.',
+    description: 'An applied AI research concept exploring learning support, model evaluation, and workflow assistance with appropriate human oversight.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: Cpu,
@@ -137,7 +137,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Zero-trust academic identity fabric (CSREXUS ID), biometric examination verification, and regulatory data compliance firewall.',
+    description: 'A security engineering concept covering identity, access control, privacy, and application protection.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: ShieldCheck,
@@ -152,7 +152,7 @@ const subsidiaries: Subsidiary[] = [
     leadership: 'Leadership information not published',
     founded: 'Date not verified',
     scale: 'Operating metrics not verified',
-    description: 'Strategic seed and Series A growth fund investing in student-founded startups, campus incubators, and breakthrough educational hardware.',
+    description: 'A venture-development concept for evaluating product opportunities, partnerships, and early-stage ideas.',
     deepDiveText: 'This entry describes a product or initiative associated with CSREXUS. Confirm availability, delivery status, customers, metrics, and the responsible legal entity directly before relying on it.',
     synergyPoint: 'Potential collaboration area; confirm technical integrations, ownership, and availability with the project team.',
     icon: TrendingUp,
@@ -232,7 +232,7 @@ export function Ecosystem() {
           ))}
         </div>
 
-        {/* Subsidiaries Grid */}
+        {/* Product and initiative cards */}
         <motion.div 
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
