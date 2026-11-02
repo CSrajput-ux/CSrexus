@@ -115,7 +115,7 @@ export function GroupArchitecture() {
           {/* Left Column: Clickable Synergy Layers */}
           <div className="lg:col-span-5 space-y-4">
             <h3 className="text-xs uppercase tracking-widest font-bold text-gray-400 mb-4 px-2">
-              Select Shared Parent Infrastructure Layer
+              Select a proposed technology layer
             </h3>
             {synergyLayers.map((layer) => {
               const Icon = layer.icon;
